@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+
+<body>
+  <div class="btn">
+    <button><a href=""></a>Jazz kit</button>
+    <button><a href=""></a>Rock kit</button>
+    <button><a href=""></a>Hip-hop kit</button>
+  </div>
+
+  <div class="keyss">
+      <div data-key="KeyQ" class="key">
+        <kbd>Q</kbd>
+        <span class="sound">snare</span>
+      </div>
+      
+      <div data-key="KeyW" class="key">
+        <kbd>W</kbd>
+        <span class="sound">snare</span>
+      </div>
+
+      <div data-key="KeyE" class="key">
+        <kbd>E</kbd>
+        <span class="sound">perc</span>
+      </div>
+   
+
+    <div data-key="KeyR" class="key">
+      <kbd>R</kbd>
+      <span class="sound">perc</span>
+    </div>
+
+    <div data-key="KeyT" class="key">
+      <kbd>T</kbd>
+      <span class="sound">ride</span>
+    </div>
+
+    <div data-key="KeyY" class="key">
+      <kbd>Y</kbd>
+      <span class="sound">shaker</span>
+    </div>
+
+    <div data-key="KeyU" class="key">
+      <kbd>U</kbd>
+      <span class="sound">perc</span>
+    </div>
+
+    <div data-key="KeyI" class="key">
+      <kbd>I</kbd>
+      <span class="sound">openhat</span>
+    </div>
+
+    <div data-key="KeyP" class="key">
+      <kbd>P</kbd>
+      <span class="sound">Hats</span>
+    </div>
+
+  </div>
+
+  <div class="keys">
+    <div data-key="KeyA" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="KeyS" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="KeyD" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="KeyF" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="KeyG" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="KeyH" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="KeyJ" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="KeyK" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="KeyL" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+
+  <div class="keysss">
+    <div data-key="KeyZ" class="key">
+      <kbd>Z</kbd>
+      <span class="sound">snare</span>
+    </div>
+    
+    <div data-key="KeyX" class="key">
+      <kbd>X</kbd>
+      <span class="sound">snare</span>
+    </div>
+
+    <div data-key="KeyC" class="key">
+      <kbd>C</kbd>
+      <span class="sound">perc</span>
+    </div>
+
+    <div data-key="KeyV" class="key">
+      <kbd>V</kbd>
+      <span class="sound">perc</span>
+    </div>
+
+    <div data-key="KeyB" class="key">
+      <kbd>B</kbd>
+      <span class="sound">ride</span>
+    </div>
+
+    <div data-key="KeyN" class="key">
+      <kbd>N</kbd>
+      <span class="sound">shaker</span>
+    </div>
+
+    <div data-key="KeyM" class="key">
+      <kbd>M</kbd>
+      <span class="sound">perc</span>
+    </div>
+
+    <div data-key="KeyI" class="key">
+      <kbd>I</kbd>
+      <span class="sound">openhat</span>
+    </div>
+
+    <div data-key="KeyO" class="key">
+      <kbd>O</kbd>
+      <span class="sound">Hats</span>
+    </div>
+
+  
+
+  <audio data-key="KeyA" src="sounds/clap.wav"></audio>
+  <audio data-key="KeyS" src="sounds/hihat.wav"></audio>
+  <audio data-key="KeyD" src="sounds/kick.wav"></audio>
+  <audio data-key="KeyF" src="sounds/openhat.wav"></audio>
+  <audio data-key="KeyG" src="sounds/boom.wav"></audio>
+  <audio data-key="KeyH" src="sounds/ride.wav"></audio>
+  <audio data-key="KeyJ" src="sounds/snare.wav"></audio>
+  <audio data-key="KeyK" src="sounds/tom.wav"></audio>
+  <audio data-key="KeyL" src="sounds/tink.wav"></audio>
+  <audio data-key="KeyP" src="sounds/Hats - Metal.wav"></audio>
+  <audio data-key="KeyI" src="sounds/openhat-tight.wav"></audio>
+  <audio data-key="KeyU" src="sounds/perc-chirpy.wav"></audio>
+  <audio data-key="KeyY" src="sounds/shaker-analog.wav"></audio>
+  <audio data-key="KeyT" src="sounds/ride-acoustic01.wav"></audio>
+  <audio data-key="KeyR" src="sounds/perc-hollow.wav"></audio>
+  <audio data-key="KeyE" src="sounds/perc-laser.wav"></audio>
+  <audio data-key="KeyW" src="sounds/snare-808.wav"></audio>
+  <audio data-key="KeyQ" src="sounds/snare-acoustic02.wav"></audio>
+  <audio data-key="KeyZ" src="sounds/Snare - Tapestop.wav"></audio>
+  <audio data-key="KeyX" src="sounds/hihat-digital.wav"></audio>
+  <audio data-key="KeyC" src="sounds/tom-chiptune.wav"></audio>
+  <audio data-key="KeyV" src="sounds/Clap - Vinyl 1.wav"></audio>
+  <audio data-key="KeyB" src="sounds/Clap - Vinyl 2.wav"></audio>
+  <audio data-key="KeyN" src="sounds/Hats - Noise.wav"></audio>
+  <audio data-key="KeyM" src="sounds/Snare - Verbotron.wav"></audio>
+  <audio data-key="KeyO" src="sounds/kick-floppy.wav"></audio>
+
+  <script>
+
+    function removeTransition(e) {
+      if (e.isTrusted !== true) return;
+      this.classList.remove('playing')
+    }
+
+    function playSound(e) {
+      const audio = document.querySelector(`audio[data-key='${e.code}']`);
+      const key = document.querySelector(`.key[data-key='${e.code}']`);
+      if (!audio) return;
+
+      audio.currentTime = 0;
+      audio.play();
+      key.classList.add('playing');
+    }
+
+    const keys = document.querySelectorAll('.key');
+    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+    window.addEventListener('keydown', playSound);
+  </script>
+
+</body>
+
+</html>
